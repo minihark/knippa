@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #F0F4FA;
+    background-color: #080A0D;
+  }
+
+  /* Universal tabular figures for clean fiscal & ledger alignment */
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Tactile button press simulation */
+.btn-tactile {
+  transition: transform 0.08s ease, box-shadow 0.08s ease;
+}
+
+.btn-tactile:active {
+  transform: translateY(1px) scale(0.99);
+}
+
+/* Custom dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0D1016;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252E3F;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #344057;
+}
